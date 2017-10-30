@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Week 07</title>
+	<script type="text/javascript" src="Week07.js"></script>
+	<link rel="stylesheet" href="Week07.css" type="text/css">
+</head>
+
+<body>
+	<table>
+		<tr>
+			<th>Item</th>
+			<th>Description</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td>Stock Tank</td>
+			<td>Our standard tank. Dimensions 4ft long x 2ft wide x 2ft deep. Holds 120 gallons*.</td>
+			<td>$110</td>
+			<td>
+				<input class="quantity">
+			</td>
+			<td>
+				<button>Add to Cart</button>
+			</td>
+		</tr>
+		<tr>
+			<td>Whole Family Hot Tub</td>
+			<td>Invite all the cousins over for our large hot tub &#40;fire starting supplies sold seperately&#41;. Dimensions 8ft diameter
+				x 2ft deep. Holds 750 gallons*.</td>
+			<td>$350</td>
+			<td>
+				<input class="quantity">
+			</td>
+			<td>
+				<button>Add to Cart</button>
+			</td>
+		</tr>
+		<tr>
+			<td>Drain Kit</td>
+			<td>Sure you could use a siphon tube, but this is faster.</td>
+			<td>$45</td>
+			<td>
+				<input class="quantity">
+			</td>
+			<td>
+				<button>Add to Cart</button>
+			</td>
+		</tr>
+		<tr>
+			<td>Lye Soap</td>
+			<td>Plain lye soap, just like Granda made. It'll take off all the dirt...and then some. 1 Bar.</td>
+			<td>$3</td>
+			<td>
+				<input class="quantity">
+			</td>
+			<td>
+				<button>Add to Cart</button>
+			</td>
+		</tr>
+		<tr>
+			<td>Fire Starting Kit</td>
+			<td>Everything needed to get the Whole Family Hot Tub heated up. Includes matches, fine kindling, and a wad of Grandpa Joe's
+				belly button lint &#40;works every time&#41;.</td>
+			<td>$4</td>
+			<td>
+				<input class="quantity">
+			</td>
+			<td>
+				<button>Add to Cart</button>
+			</td>
+		</tr>
+	</table>
+	<h3>Shipping Info</h3>
+	<form id="shipping">
+		First Name
+		<input type="text" name="first_s" class="shipping" id="first_s"> 
+		Last Name 
+		<input type="text" name="last_s" class="shipping" id="last_s"> 
+		Street Address 
+		<input type="text" name="address_s" class="shipping" id="address_s"> 
+		City 
+		<input type="text" name="city_s" class="shipping" id="city_s"> 
+		State 
+		<input type="text" name="state_s" class="shipping" id="state_s"> 
+		Zip Code 
+		<input type="text" name="zip_s" class="shipping" id="zip_s"> 
+		Phone
+		<input type="text" name="phone_s" class="shipping" id="phone_s"> 
+	</form>
+	<h3>Billing Info</h3>
+	<form id="billing">
+		First Name 
+		<input type="text" name="first_b" class="billing" id="first_b">
+		Last Name 
+		<input type="text" name="last_b" class="billing" id="last_b">
+		Street Address 
+		<input type="text" name="address_b" class="billing" id="address_b">
+		City 
+		<input type="text" name="city_b" class="billing" id="city_b">
+		State 
+		<input type="text" name="state_b" class="billing" id="state_b">
+		Zip Code 
+		<input type="text" name="zip_b" class="billing" id="zip_b">
+		Phone 
+		<input type="text" name="phone_b" class="billing" id="phone_b">
+		Card Type 
+		<input type="text" name="CCtype_b" class="billing" id="CCtype_b">
+		Card Number 
+		<input type="text" name="CC_b" class="billing" id="CC_b">
+		Expiration 
+		<input type="text" name="exp_b" class="billing" id="exp_b">
+		CVV
+		<input type="text" name="CVV_b" class="billing" id="CVV_b">
+	</form>
+	<button>Reset</button>
+	<button>Submit</button>
+</body>
+
+</html>
