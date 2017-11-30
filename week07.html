@@ -43,7 +43,7 @@
 				</form>
 			</td>
 			<td>
-					<button onclick="addToCart('tub', 'numTub', 350)">Add to Cart</button>
+				<button onclick="addToCart('tub', 'numTub', 350)">Add to Cart</button>
 			</td>
 		</tr>
 		<tr>
@@ -56,7 +56,7 @@
 				</form>
 			</td>
 			<td>
-					<button onclick="addToCart('drain', 'numDrain', 45)">Add to Cart</button>
+				<button onclick="addToCart('drain', 'numDrain', 45)">Add to Cart</button>
 			</td>
 		</tr>
 		<tr>
@@ -69,7 +69,7 @@
 				</form>
 			</td>
 			<td>
-					<button onclick="addToCart('soap', 'numSoap', 3)">Add to Cart</button>
+				<button onclick="addToCart('soap', 'numSoap', 3)">Add to Cart</button>
 			</td>
 		</tr>
 		<tr>
@@ -83,96 +83,146 @@
 				</form>
 			</td>
 			<td>
-					<button onclick="addToCart('tank', 'numTank', 4)">Add to Cart</button>
+				<button onclick="addToCart('tank', 'numTank', 4)">Add to Cart</button>
 			</td>
 		</tr>
 	</table>
 
-	<p>Total $<span id="total">0</span></p>
+	<p>Total $
+		<span id="total">0</span>
+	</p>
 	<button onclick="emptyCart()">Empty Cart</button>
 
-	<h3>Shipping Info</h3>
-	<form id="shipping">
-		<div>
-			First Name
-			<input type="text" name="first_s" class="shipping" id="first_s">
-		</div>
-		<div>
-			Last Name
-			<input type="text" name="last_s" class="shipping" id="last_s">
-		</div>
-		<div>
-			Street Address
-			<input type="text" name="address_s" class="shipping" id="address_s">
-		</div>
-		<div>
-			City
-			<input type="text" name="city_s" class="shipping" id="city_s">
-		</div>
-		<div>
-			State
-			<input type="text" name="state_s" class="shipping" id="state_s">
-		</div>
-		<div>
-			Zip Code
-			<input type="text" name="zip_s" class="shipping" id="zip_s">
-		</div>
-		<div>
-			Phone
-			<input type="text" name="phone_s" class="shipping" id="phone_s">
-		</div>
-	</form>
 
-	<h3>Billing Info</h3>
-	<form id="billing">
-		<div>
-			First Name
-			<input type="text" name="first_b" class="billing" id="first_b">
-		</div>
-		<div>
-			Last Name
-			<input type="text" name="last_b" class="billing" id="last_b">
-		</div>
-		<div>
-			Street Address
-			<input type="text" name="address_b" class="billing" id="address_b">
-		</div>
-		<div>
-			City
-			<input type="text" name="city_b" class="billing" id="city_b">
-		</div>
-		<div>
-			State
-			<input type="text" name="state_b" class="billing" id="state_b">
-		</div>
-		<div>
-			Zip Code
-			<input type="text" name="zip_b" class="billing" id="zip_b">
-		</div>
-		<div>
-			Phone
-			<input type="text" name="phone_b" class="billing" id="phone_b">
-		</div>
-		<div>
-			Card Type
-			<input type="text" name="CCtype_b" class="billing" id="CCtype_b">
-		</div>
-		<div>
-			Card Number
-			<input type="text" name="CC_b" class="billing" id="CC_b">
-		</div>
-		<div>
-			Expiration
-			<input type="text" name="exp_b" class="billing" id="exp_b">
-		</div>
-		<div>
-			CVV
-			<input type="text" name="CVV_b" class="billing" id="CVV_b">
-		</div>
+
+	<form action="">
+		<table>
+			<tr>
+				<th colspan="2">Shipping Info</th>
+			</tr>
+			<tr>
+				<div>
+				<div>
+					<td>
+						First Name
+					</td>
+					<td>
+						<input type="text" name="first_s" class="shipping" id="first_s">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						Last Name
+					</td>
+					<td>
+						<input type="text" name="last_s" class="shipping" id="last_s">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						Street Address
+					</td>
+					<td>
+						<input type="text" name="address_s" class="shipping" id="address_s">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						City
+					</td>
+					<td>
+						<input type="text" name="city_s" class="shipping" id="city_s">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						State
+					</td>
+					<td>
+						<input type="text" name="state_s" class="shipping" id="state_s">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						Zip Code
+					</td>
+					<td>
+						<input type="text" name="zip_s" class="shipping" id="zip_s">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						Phone
+					</td>
+					<td>
+						<input type="text" name="first_s" class="shipping" id="first_s">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<th colspan="2">Payment Info</th>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						Card Type
+					</td>
+					<td>
+						<input type="text" name="CCtype_b" class="billing" id="CCtype_b">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						Card Number
+					</td>
+					<td>
+						<input type="text" name="CC_b" class="billing" id="CC_b">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						Expiration
+					</td>
+					<td>
+						<input type="text" name="exp_b" class="billing" id="exp_b">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<div>
+					<td>
+						CVV
+					</td>
+					<td>
+						<input type="text" name="CVV_b" class="billing" id="CVV_b">
+					</td>
+				</div>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="reset">
+					<input type="submit">
+				</td>
+			</tr>
+		</table>
 	</form>
-	
-	<button onclick="reset('shipping', 'billing' )">Reset</button>
-	<button>Submit</button>
 </body>
 
 </html>
